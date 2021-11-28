@@ -1,5 +1,6 @@
 public class Cylinder extends Circle{
     private double height;
+    
 
     public Cylinder() {
         height = 1.0;
@@ -29,10 +30,10 @@ public class Cylinder extends Circle{
 
     public void display() {
         System.out.println("_________________________");
-        System.out.println("\tCyliner");
-        System.out.println("Height : " + getHeight());
-        System.out.println("Radius : " + getRadius());
-        System.out.println("Volume : " + getVolume());
+        System.out.println(ANSI_RED + "\tCyliner" + ANSI_RESET);
+        System.out.println(ANSI_GREEN + "Height : " + getHeight() + ANSI_RESET);
+        System.out.println(ANSI_GREEN + "Radius : " + getRadius() + ANSI_RESET);
+        System.out.println(ANSI_BLUE + "Volume : " + getVolume() + ANSI_RESET);
         System.out.println("_________________________");
     }
 

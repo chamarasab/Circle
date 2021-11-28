@@ -1,6 +1,11 @@
 public class Circle {
     protected double radius;
     protected String color;
+
+    public static final String ANSI_RESET = "\u001B[0m";
+    public static final String ANSI_RED = "\u001B[31m";
+    public static final String ANSI_GREEN = "\u001B[32m";
+    public static final String ANSI_BLUE = "\u001B[33m";
     
     public Circle() {
         radius = 1.0;
@@ -38,11 +43,12 @@ public class Circle {
     }
 
     public void display() {
+
         System.out.println("_________________________");
-        System.out.println("\tCircle");
-        System.out.println("Radius : " + getRadius());
-        System.out.println("Color  : " + getColor());
-        System.out.println("Area   : " + getArea());
+        System.out.println(ANSI_RED + "\tCircle" + ANSI_RESET);
+        System.out.println(ANSI_GREEN + "Radius : " + getRadius() + ANSI_RESET);
+        System.out.println(ANSI_GREEN + "Color  : " + getColor() + ANSI_RESET);
+        System.out.println(ANSI_BLUE + "Area   : " + getArea() + ANSI_RESET);
         System.out.println("_________________________");
 
     }
